@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="counttxt" type="id" />
+    <item name="Frequencytxt" type="id" />
+    <item name="InternetStatustxt" type="id" />
+    <item name="batteryStatustxt" type="id" />
+    <item name="BatteryPercantagetxt" type="id" />
+    <item name="LocationStatus" type="id" />
+</resources>

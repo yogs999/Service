@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:id="@+id/take"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_22sdp"
+        android:hint="@string/timestamp"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+
+    <ImageView
+        android:id="@+id/imageCapture"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:src="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Date"
+        app:layout_constraintVertical_bias="0.042"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_22sdp"
+        android:text="@string/count"
+        android:textSize="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCapture"
+        app:layout_constraintVertical_bias="0.106" />
+
+
+    <TextView
+        android:id="@id/counttxt"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toEndOf="@+id/count"
+        app:layout_constraintTop_toBottomOf="@+id/imageCapture"
+        app:layout_constraintVertical_bias="0.865" />
+
+    <TextView
+        android:id="@+id/Frequency"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="332dp"
+        android:text="@string/frequency"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/count"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@id/Frequencytxt"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="22sp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/Frequency"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toEndOf="@+id/Frequency"
+        app:layout_constraintTop_toBottomOf="@+id/counttxt"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/internetStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/connectivity"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Frequency"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <ToggleButton
+        android:id="@id/InternetStatustxt"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="50sp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/on_off"
+        app:layout_constraintBottom_toBottomOf="@+id/internetStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.624"
+        app:layout_constraintStart_toEndOf="@+id/internetStatus"
+        app:layout_constraintTop_toBottomOf="@+id/Frequencytxt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/batteryStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_22sdp"
+        android:text="@string/battery_charging"
+        android:textSize="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/internetStatus"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@id/batteryStatustxt"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="22sp"
+        android:textStyle="bold"
+        android:paddingStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/batteryStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toEndOf="@+id/batteryStatus"
+        app:layout_constraintTop_toBottomOf="@+id/InternetStatustxt"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/BatteryPercantage"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_22sdp"
+        android:text="@string/battery_charge"
+        android:textSize="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/batteryStatus"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <ToggleButton
+        android:id="@id/BatteryPercantagetxt"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="50sp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/BatteryPercantage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toEndOf="@+id/BatteryPercantage"
+        app:layout_constraintTop_toBottomOf="@+id/batteryStatustxt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Location"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_22sdp"
+        android:text="@string/location"
+        android:textSize="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BatteryPercantage"
+        app:layout_constraintVertical_bias="0.171" />
+
+    <TextView
+        android:id="@id/LocationStatus"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toEndOf="@+id/Location"
+        app:layout_constraintTop_toBottomOf="@+id/BatteryPercantagetxt"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:id="@+id/sendData"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/manual_data_refresh"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LocationStatus"
+        app:layout_constraintVertical_bias="0.492" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ServiceDemo</string>
+    <string name="count">Capture Count</string>
+    <string name="frequency">Frequency(Min)</string>
+    <string name="connectivity">Connectivity</string>
+    <string name="battery_charging">Battery Charging</string>
+    <string name="battery_charge">Battery Charge</string>
+    <string name="location">Location</string>
+    <string name="manual_data_refresh">Manual Data Refresh</string>
+    <string name="timestamp">TimeStamp</string>
+    <string name="on_off">ON/Off</string>
+</resources>
